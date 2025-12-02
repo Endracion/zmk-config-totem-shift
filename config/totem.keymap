@@ -266,7 +266,6 @@
               &hm LGUI A  &hm LALT S  &hm LCTRL D    &hm LSHIFT F  &kp G        &kp H    &hm RSHFT J  &hm RCTRL K  &hm RALT L  &hm RGUI SEMICOLON
 &lt 3 ESCAPE  &kp Z       &kp X       &kp C          &kp V         &kp B        &kp N    &kp M        &kp COMMA    &kp DOT     &kp SLASH           &kp APOSTROPHE
                                       &mt LCTRL DEL  &lt 1 TAB     &kp SPACE    &kp RET  &lt 2 BSPC   &kp MINUS
-            >;
 /*           &kp Q  &kp W  &kp F      &kp P        &kp B          &kp J      &kp L      &kp U          &kp Y    &kp SEMI
            &kp A  &kp R  &kp S      &kp T        &kp G          &kp M      &kp N      &kp E          &kp I    &kp O
 &lt 3 TAB  &kp Z  &kp X  &kp C      &kp D        &kp V          &kp K      &kp H      &kp COMMA      &kp DOT  &kp FSLH  &lc 2 SQT
