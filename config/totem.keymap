@@ -252,22 +252,28 @@
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┌─────────┬─────────┬─────────┬─────────┬─────────┐                     ┌─────────┬─────────┬─────────┬─────────┬─────────┐
-            //             │    Q    │    W    │    F    │    P    │    B    │                     │    J    │    L    │    U    │    Y    │    ;    │   
+            //             │    Q    │    W    │    E    │    R    │    T    │                     │    Y    │    U    │    I    │    O    │    P    │   
             //             ├─────────┼─────────┼─────────┼─────────┼─────────┤                     ├─────────┼─────────┼─────────┼─────────┼─────────┤
-            //             │    A    │    R    │    S    │    T    │    G    │                     │    M    │    N    │    E    │    I    │    O    │
+            //             │    A    │    S    │    D    │    F    │    G    │                     │    H    │    J    │    K    │    L    │    ;    │
             //   ┌─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                     ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┐
-            //   │   TAB   │    Z    │    X    │    C    │    D    │    V    │                     │    K    │    H    │    ,    │    .    │    /    │    '    │
+            //   │   ESC   │    Z    │    X    │    C    │    V    │    B    │                     │    N    │    M    │    ,    │    .    │    /    │    '    │
             //   └─────────┴─────────┴─────────┴─────────┼─────────┼─────────┼──────────┬┬─────────┼─────────┼─────────┼─────────┴─────────┴─────────┴─────────┘
-            //                                           │   COPY  │  PASTE  │  SPACE   ││  ENTER  │  BSPCE  │  DITTO  │  
+            //                                           │   DEL   │   TAB   │  SPACE   ││  ENTER  │  BSPCE  │    -    │  
             //                                           └─────────┴─────────┴──────────┘└─────────┴─────────┴─────────┘
 
             bindings = <
-           &kp Q  &kp W  &kp F      &kp P        &kp B          &kp J      &kp L      &kp U          &kp Y    &kp SEMI
+                          &kp Q       &kp W       &kp E          &kp R         &kp T        &kp Y    &kp U        &kp I        &kp O       &kp P
+              &hm LGUI A  &hm LALT S  &hm LCTRL D    &hm LSHIFT F  &kp G        &kp H    &hm RSHFT J  &hm RCTRL K  &hm RALT L  &hm RGUI SEMICOLON
+&lt 3 ESCAPE  &kp Z       &kp X       &kp C          &kp V         &kp B        &kp N    &kp M        &kp COMMA    &kp DOT     &kp SLASH           &kp APOSTROPHE
+                                      &mt LCTRL DEL  &lt 1 TAB     &kp SPACE    &kp RET  &lt 2 BSPC   &kp MINUS
+            >;
+/*           &kp Q  &kp W  &kp F      &kp P        &kp B          &kp J      &kp L      &kp U          &kp Y    &kp SEMI
            &kp A  &kp R  &kp S      &kp T        &kp G          &kp M      &kp N      &kp E          &kp I    &kp O
 &lt 3 TAB  &kp Z  &kp X  &kp C      &kp D        &kp V          &kp K      &kp H      &kp COMMA      &kp DOT  &kp FSLH  &lc 2 SQT
                          &kp LC(C)  &lt 2 LC(V)  &lt 1 SPACE    &lt 1 RET  &lt 2 BSPC &kp LC(GRAVE)
             >;
-/*			bindings = <
+// og
+
               &kp Q       &kp W       &kp E          &kp R         &kp T        &kp Y    &kp U        &kp I        &kp O       &kp P
               &kp A 	  &kp S 	  &kp D  	     &kp F 		   &kp G        &kp H    &kp J  	  &kp K 	   &kp L  	   &kp SEMICOLON
 &lt 3 TAB	  &kp Z       &kp X       &kp C          &kp V         &kp B        &kp N    &kp M        &kp COMMA    &kp DOT     &kp SLASH           &lc 2 SQT
