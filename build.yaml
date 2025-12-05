@@ -1,16 +1,20 @@
 include:
   - board: seeeduino_xiao_ble
     shield: totem_left rgbled_adapter
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
     artifact-name: totem_shift_left
   - board: seeeduino_xiao_ble
     shield: totem_right rgbled_adapter
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
     artifact-name: totem_shift_right
   - board: seeeduino_xiao_ble
-    shield: totem_dongle prospector_adapter
+    shield: totem_dongle dongle_screen
     snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
-    artifact-name: xiao_prospector_dongle
+    cmake-args: -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=8000 -DCONFIG_ZMK_STUDIO=y
+    #cmake-args: -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=8000 #optional if logging is enabled
+    #snippet: zmk-usb-logging #only enable for debugging
+    artifact-name: totem-dongle-screen
   - board: seeeduino_xiao_ble
     shield: settings_reset
     artifact-name: xiao_reset_settings
-# there is no settingsreset (needed) for the XIAO
+    # there is no settingsreset (needed) for the XIAO
