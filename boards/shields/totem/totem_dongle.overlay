@@ -9,6 +9,11 @@
 / {
     chosen {
         zmk,kscan = &mock_kscan;
+        /delete-property/ zephyr,console;
+        /delete-property/ zephyr,shell-uart;
+        /delete-property/ zephyr,uart-mcumgr;
+        /delete-property/ zephyr,bt-mon-uart;
+        /delete-property/ zephyr,bt-c2h-uart;
         wakeup-source;
     };
 
@@ -18,4 +23,8 @@
         rows = <0>;
         events = <0>;
     };
+};
+
+&board_cdc_acm_uart {
+    status = "disabled";
 };
