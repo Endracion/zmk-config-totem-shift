@@ -8,7 +8,7 @@ include:
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n -DCONFIG_ZMK_USB=n
     artifact-name: totem_shift_right
   - board: xiao_ble//zmk
-    shield: totem_dongle dongle_screen
+    shield: totem_dongle dongle_screen raw_hid_adapter
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=8000 -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_DISPLAY=y -DCONFIG_ZMK_DONGLE_DISPLAY_DONGLE_BATTERY=n -DCONFIG_ZMK_DISPLAY_STATUS_SCREEN_CUSTOM=y -DCONFIG_DONGLE_SCREEN_SYSTEM_ICON=2
     #cmake-args: -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=8000 #optional if logging is enabled
@@ -18,6 +18,3 @@ include:
     shield: settings_reset
     artifact-name: xiao_reset_settings
     # there is no settingsreset (needed) for the XIAO
-  - board: xiao_ble//zmk
-    shield: totem_dongle raw_hid_adapter # <-- required for Raw HID support
-    snippet: studio-rpc-usb-uart # <-- required for ZMK Studio support
