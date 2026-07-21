@@ -20,7 +20,7 @@ manifest:
       revision: main
     - name: zmk-dongle-screen
       remote: janpfischer
-      revision: main
+      revision: upgrade-4.1
     - name: zmk-raw-hid
       remote: zzeneg
       revision: main

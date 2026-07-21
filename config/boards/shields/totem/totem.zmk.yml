@@ -3,7 +3,7 @@ id: totem-shift
 name: TOTEM-SHIFT
 type: shield
 url: https://github.com/Endracion/TOTEM-SHIFT
-requires: [seeeduino_xiao_ble]
+requires: [xiao_ble]
 features:
   - keys
 siblings:
