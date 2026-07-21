@@ -10,7 +10,7 @@ include:
   - board: xiao_ble//zmk
     shield: totem_dongle dongle_screen
     snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=8000 -DCONFIG_ZMK_STUDIO=y
+    cmake-args: -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=8000 -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_DISPLAY=y -DCONFIG_ZMK_DONGLE_DISPLAY_DONGLE_BATTERY=n -DCONFIG_ZMK_DISPLAY_STATUS_SCREEN_CUSTOM=y -DCONFIG_DONGLE_SCREEN_SYSTEM_ICON=2
     #cmake-args: -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=8000 #optional if logging is enabled
     #snippet: zmk-usb-logging #only enable for debugging
     artifact-name: totem-dongle-screen
