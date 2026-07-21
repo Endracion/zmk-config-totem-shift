@@ -18,3 +18,6 @@ include:
     shield: settings_reset
     artifact-name: xiao_reset_settings
     # there is no settingsreset (needed) for the XIAO
+  - board: seeeduino_xiao_ble
+    shield: totem_dongle raw_hid_adapter # <-- required for Raw HID support
+    snippet: studio-rpc-usb-uart # <-- required for ZMK Studio support
